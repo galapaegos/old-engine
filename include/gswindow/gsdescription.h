@@ -1,0 +1,55 @@
+#ifndef _gsdescription_h_
+#define _gsdescription_h_
+
+#include "gscontrol.h"
+
+namespace gswin
+{
+#ifdef WIN32
+	enum
+	{
+		gsSTATIC_BITMAP = SS_BITMAP,
+		gsSTATIC_BLACKFRAME = SS_BLACKFRAME,
+		gsSTATIC_BLACKRECT = SS_BLACKRECT,
+		gsSTATIC_CENTER = SS_CENTER,
+		gsSTATIC_CENTERIMAGE = SS_CENTERIMAGE,
+		gsSTATIC_EDITCONROL = SS_EDITCONTROL,
+		gsSTATIC_ENDELLIPSIS = SS_ENDELLIPSIS,
+		gsSTATIC_ENHMETAFILE = SS_ENHMETAFILE,
+		gsSTATIC_ETCHEDFRAME = SS_ETCHEDFRAME,
+		gsSTATIC_ETCHEDHORZ = SS_ETCHEDHORZ,
+		gsSTATIC_ETCHEDVERT = SS_ETCHEDVERT,
+		gsSTATIC_GRAYFRAME = SS_GRAYFRAME,
+		gsSTATIC_GRAYRECT = SS_GRAYRECT,
+		gsSTATIC_ICON = SS_ICON,
+		gsSTATIC_LEFT = SS_LEFT,
+		gsSTATIC_LEFTNOWORDWRAP = SS_LEFTNOWORDWRAP,
+		gsSTATIC_NOPREFIX = SS_NOPREFIX,
+		gsSTATIC_NOTIFY = SS_NOTIFY,
+		gsSTATIC_OWNERDRAW = SS_OWNERDRAW,
+		gsSTATIC_PATHELLIPSIS = SS_PATHELLIPSIS,
+		gsSTATIC_REALSIZECONROL = SS_REALSIZECONTROL,
+		gsSTATIC_REALSIZEIMAGE = SS_REALSIZEIMAGE,
+		gsSTATIC_RIGHT = SS_RIGHT,
+		gsSTATIC_RIGHTJUST = SS_RIGHTJUST,
+		gsSTATIC_SIMPLE = SS_SIMPLE,
+		gsSTATIC_SUNKEN = SS_SUNKEN,
+		gsSTATIC_TYPEMASK = SS_TYPEMASK,
+		gsSTATIC_WHITEFRAME = SS_WHITEFRAME,
+		gsSTATIC_WHITERECT = SS_WHITERECT,
+		gsSTATIC_WORDELLIPSIS = SS_WORDELLIPSIS
+	};
+#endif
+
+	class gsdescription : public gscontrol
+	{
+	public:
+		gsdescription (gswidget *parent, const gsutil::gsstring &name="", const long &style=gsSTATIC_LEFT, 
+			const int &id=-1, const int &x=0, const int &y=0, const int &w=0, const int &h=0);
+		virtual ~gsdescription ();
+
+		virtual void getDefaultSize (int *w, int *h) { *w = 80; *h = 20; }
+	};
+};
+
+#endif

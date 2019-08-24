@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F712BA83-FA87-4C6A-8783-2843EB37D9BA}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>../../bin\</OutDir>
+    <IntDir>Debug/libgeom\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>Release\</OutDir>
+    <IntDir>Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>./;../;../../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;GSGEOM_EXPORTS;_CRT_SECURE_NO_DEPRECATE;_WIN32_WINNT=0x0400;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libutil.lib;libimage.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../bin;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;GSGEOM_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)gsgeom.dll</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>$(OutDir)gsgeom.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\gsgeom\gsanimation.cpp" />
+    <ClCompile Include="..\..\src\gsgeom\gsbbox.cpp" />
+    <ClCompile Include="..\..\src\gsgeom\gsbone.cpp" />
+    <ClCompile Include="..\..\src\gsgeom\gsbox.cpp" />
+    <ClCompile Include="..\..\src\gsgeom\gscamera.cpp" />
+    <ClCompile Include="..\..\src\gsgeom\gseffect.cpp" />
+    <ClCompile Include="..\..\src\gsgeom\gsfrustum.cpp" />
+    <ClCompile Include="..\..\src\gsgeom\gslight.cpp" />
+    <ClCompile Include="..\..\src\gsgeom\gsocclusion.cpp" />
+    <ClCompile Include="..\..\src\gsgeom\gsoctree.cpp" />
+    <ClCompile Include="..\..\src\gsgeom\gsplane.cpp" />
+    <ClCompile Include="..\..\src\gsgeom\gspolygon.cpp" />
+    <ClCompile Include="..\..\src\gsgeom\gsquadtree.cpp" />
+    <ClCompile Include="..\..\src\gsgeom\gsscene.cpp" />
+    <ClCompile Include="..\..\src\gsgeom\gssceneutil.cpp" />
+    <ClCompile Include="..\..\src\gsgeom\gsshader.cpp" />
+    <ClCompile Include="..\..\src\gsgeom\gsshadervariable.cpp" />
+    <ClCompile Include="..\..\src\gsgeom\gsskeleton.cpp" />
+    <ClCompile Include="..\..\src\gsgeom\gsspline.cpp" />
+    <ClCompile Include="..\..\src\gsgeom\gsterrain.cpp" />
+    <ClCompile Include="..\..\src\gsgeom\gsterrainpatch.cpp" />
+    <ClCompile Include="..\..\src\gsgeom\gstriangulate.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\gsgeom\gsanimation.h" />
+    <ClInclude Include="..\..\include\gsgeom\gsbbox.h" />
+    <ClInclude Include="..\..\include\gsgeom\gsbone.h" />
+    <ClInclude Include="..\..\include\gsgeom\gsbox.h" />
+    <ClInclude Include="..\..\include\gsgeom\gscamera.h" />
+    <ClInclude Include="..\..\include\gsgeom\gscolor.h" />
+    <ClInclude Include="..\..\include\gsgeom\gseffect.h" />
+    <ClInclude Include="..\..\include\gsgeom\gsface-back.h" />
+    <ClInclude Include="..\..\include\gsgeom\gsfractal.h" />
+    <ClInclude Include="..\..\include\gsgeom\gsfrustum.h" />
+    <ClInclude Include="..\..\include\gsgeom\gsgeometryinfo.h" />
+    <ClInclude Include="..\..\include\gsgeom\gslight.h" />
+    <ClInclude Include="..\..\include\gsgeom\gsline.h" />
+    <ClInclude Include="..\..\include\gsgeom\gsmandelbrot.h" />
+    <ClInclude Include="..\..\include\gsgeom\gsmaterial.h" />
+    <ClInclude Include="..\..\include\gsgeom\gsmatrix.h" />
+    <ClInclude Include="..\..\include\gsgeom\gsmesh.h" />
+    <ClInclude Include="..\..\include\gsgeom\gsnoise.h" />
+    <ClInclude Include="..\..\include\gsgeom\gsobject.h" />
+    <ClInclude Include="..\..\include\gsgeom\gsocclusion.h" />
+    <ClInclude Include="..\..\include\gsgeom\gsoctree.h" />
+    <ClInclude Include="..\..\include\gsgeom\gsplane.h" />
+    <ClInclude Include="..\..\include\gsgeom\gspolygon.h" />
+    <ClInclude Include="..\..\include\gsgeom\gsquadtree.h" />
+    <ClInclude Include="..\..\include\gsgeom\gsquaternion.h" />
+    <ClInclude Include="..\..\include\gsgeom\gsray.h" />
+    <ClInclude Include="..\..\include\gsgeom\gsscene.h" />
+    <ClInclude Include="..\..\include\gsgeom\gssceneutil.h" />
+    <ClInclude Include="..\..\include\gsgeom\gsshader.h" />
+    <ClInclude Include="..\..\include\gsgeom\gsshadervariable.h" />
+    <ClInclude Include="..\..\include\gsgeom\gsskeleton.h" />
+    <ClInclude Include="..\..\include\gsgeom\gsspatial.h" />
+    <ClInclude Include="..\..\include\gsgeom\gsspline.h" />
+    <ClInclude Include="..\..\include\gsgeom\gsterrain.h" />
+    <ClInclude Include="..\..\include\gsgeom\gsterrainpatch.h" />
+    <ClInclude Include="..\..\include\gsgeom\gstextinfo.h" />
+    <ClInclude Include="..\..\include\gsgeom\gstextureinfo.h" />
+    <ClInclude Include="..\..\include\gsgeom\gstriangulate.h" />
+    <ClInclude Include="..\..\include\gsgeom\gsvec2.h" />
+    <ClInclude Include="..\..\include\gsgeom\gsvec3.h" />
+    <ClInclude Include="..\..\include\gsgeom\gsvec4.h" />
+    <ClInclude Include="..\..\include\gsgeom\gsvector.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="libimage.vcxproj">
+      <Project>{ccf83e91-7440-449c-a31c-cd201522bb60}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="libutil.vcxproj">
+      <Project>{9168f132-4b67-4480-9b72-f0d51ef9de4f}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

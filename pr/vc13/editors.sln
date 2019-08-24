@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ModelEditor", "ModelEditor.vcproj", "{298A0413-BB6B-4C74-8EDB-47759BCE1E03}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LandMass-Generator", "LandMass-Generator.vcproj", "{CDEEF170-6E33-4DBA-8CA6-8D22033E9145}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug-tests|Win32 = Debug-tests|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{298A0413-BB6B-4C74-8EDB-47759BCE1E03}.Debug|Win32.ActiveCfg = Debug|Win32
+		{298A0413-BB6B-4C74-8EDB-47759BCE1E03}.Debug|Win32.Build.0 = Debug|Win32
+		{298A0413-BB6B-4C74-8EDB-47759BCE1E03}.Debug-tests|Win32.ActiveCfg = Debug|Win32
+		{298A0413-BB6B-4C74-8EDB-47759BCE1E03}.Debug-tests|Win32.Build.0 = Debug|Win32
+		{298A0413-BB6B-4C74-8EDB-47759BCE1E03}.Release|Win32.ActiveCfg = Release|Win32
+		{298A0413-BB6B-4C74-8EDB-47759BCE1E03}.Release|Win32.Build.0 = Release|Win32
+		{CDEEF170-6E33-4DBA-8CA6-8D22033E9145}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CDEEF170-6E33-4DBA-8CA6-8D22033E9145}.Debug|Win32.Build.0 = Debug|Win32
+		{CDEEF170-6E33-4DBA-8CA6-8D22033E9145}.Debug-tests|Win32.ActiveCfg = Debug|Win32
+		{CDEEF170-6E33-4DBA-8CA6-8D22033E9145}.Debug-tests|Win32.Build.0 = Debug|Win32
+		{CDEEF170-6E33-4DBA-8CA6-8D22033E9145}.Release|Win32.ActiveCfg = Release|Win32
+		{CDEEF170-6E33-4DBA-8CA6-8D22033E9145}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

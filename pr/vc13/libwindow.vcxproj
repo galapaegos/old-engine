@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5C409EDB-377D-4BDF-8814-F38A71AE9AC1}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>../../bin\</OutDir>
+    <IntDir>Debug/libwindow\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>Release\</OutDir>
+    <IntDir>Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>./;../;../../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBWINDOW_EXPORTS;_CRT_SECURE_NO_DEPRECATE;_WIN32_WINNT=0x0400;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <ProgramDataBaseFileName>$(OutDir)libwindow-vc70.pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBWINDOW_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)libwindow.dll</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>$(OutDir)libwindow.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\gswindow\gs.cpp" />
+    <ClCompile Include="..\..\src\gswindow\gsbox.cpp" />
+    <ClCompile Include="..\..\src\gswindow\gsbutton.cpp" />
+    <ClCompile Include="..\..\src\gswindow\gscheckbox.cpp" />
+    <ClCompile Include="..\..\src\gswindow\gscombobox.cpp" />
+    <ClCompile Include="..\..\src\gswindow\gscontrol.cpp" />
+    <ClCompile Include="..\..\src\gswindow\gsdescription.cpp" />
+    <ClCompile Include="..\..\src\gswindow\gsgroup.cpp" />
+    <ClCompile Include="..\..\src\gswindow\gsip.cpp" />
+    <ClCompile Include="..\..\src\gswindow\gslistbox.cpp" />
+    <ClCompile Include="..\..\src\gswindow\gsmain.cpp" />
+    <ClCompile Include="..\..\src\gswindow\gsmenu.cpp" />
+    <ClCompile Include="..\..\src\gswindow\gsmenuitem.cpp" />
+    <ClCompile Include="..\..\src\gswindow\gsprogress.cpp" />
+    <ClCompile Include="..\..\src\gswindow\gsradiobutton.cpp" />
+    <ClCompile Include="..\..\src\gswindow\gsradiogroup.cpp" />
+    <ClCompile Include="..\..\src\gswindow\gsrebar.cpp" />
+    <ClCompile Include="..\..\src\gswindow\gsslider.cpp" />
+    <ClCompile Include="..\..\src\gswindow\gsstaticbox.cpp" />
+    <ClCompile Include="..\..\src\gswindow\gsstatusbar.cpp" />
+    <ClCompile Include="..\..\src\gswindow\gstabctl.cpp" />
+    <ClCompile Include="..\..\src\gswindow\gstabpanel.cpp" />
+    <ClCompile Include="..\..\src\gswindow\gstextbox.cpp" />
+    <ClCompile Include="..\..\src\gswindow\gstogglebutton.cpp" />
+    <ClCompile Include="..\..\src\gswindow\gstooltip.cpp" />
+    <ClCompile Include="..\..\src\gswindow\gsutil.cpp" />
+    <ClCompile Include="..\..\src\gswindow\gswidget.cpp" />
+    <ClCompile Include="..\..\src\gswindow\gswindow.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\gswindow\gsbox.h" />
+    <ClInclude Include="..\..\include\gswindow\gsbutton.h" />
+    <ClInclude Include="..\..\include\gswindow\gscheckbox.h" />
+    <ClInclude Include="..\..\include\gswindow\gscombobox.h" />
+    <ClInclude Include="..\..\include\gswindow\gscontrol.h" />
+    <ClInclude Include="..\..\include\gswindow\gsdescription.h" />
+    <ClInclude Include="..\..\include\gswindow\gsgroup.h" />
+    <ClInclude Include="..\..\include\gswindow\gsip.h" />
+    <ClInclude Include="..\..\include\gswindow\gslistbox.h" />
+    <ClInclude Include="..\..\include\gswindow\gsmain.h" />
+    <ClInclude Include="..\..\include\gswindow\gsmenu.h" />
+    <ClInclude Include="..\..\include\gswindow\gsmenuitem.h" />
+    <ClInclude Include="..\..\include\gswindow\gsprogress.h" />
+    <ClInclude Include="..\..\include\gswindow\gsradiobutton.h" />
+    <ClInclude Include="..\..\include\gswindow\gsradiocontrol.h" />
+    <ClInclude Include="..\..\include\gswindow\gsradiogroup.h" />
+    <ClInclude Include="..\..\include\gswindow\gsrebar.h" />
+    <ClInclude Include="..\..\include\gswindow\gsslider.h" />
+    <ClInclude Include="..\..\include\gswindow\gsstaticbox.h" />
+    <ClInclude Include="..\..\include\gswindow\gsstatusbar.h" />
+    <ClInclude Include="..\..\include\gswindow\gstabctl.h" />
+    <ClInclude Include="..\..\include\gswindow\gstabpanel.h" />
+    <ClInclude Include="..\..\include\gswindow\gstextbox.h" />
+    <ClInclude Include="..\..\include\gswindow\gstogglebutton.h" />
+    <ClInclude Include="..\..\include\gswindow\gstooltip.h" />
+    <ClInclude Include="..\..\include\gswindow\gsutil.h" />
+    <ClInclude Include="..\..\include\gswindow\gswidget.h" />
+    <ClInclude Include="..\..\include\gswindow\gswindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="libutil.vcxproj">
+      <Project>{9168f132-4b67-4480-9b72-f0d51ef9de4f}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

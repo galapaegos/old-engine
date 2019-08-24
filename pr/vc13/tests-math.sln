@@ -1,0 +1,41 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libgeom", "libgeom.vcproj", "{F712BA83-FA87-4C6A-8783-2843EB37D9BA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9168F132-4B67-4480-9B72-F0D51EF9DE4F} = {9168F132-4B67-4480-9B72-F0D51EF9DE4F}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libutil", "libutil.vcproj", "{9168F132-4B67-4480-9B72-F0D51EF9DE4F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-math", "test-math.vcproj", "{19B097D0-1B85-4B4F-9D38-36EA5D31A474}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug-tests|Win32 = Debug-tests|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F712BA83-FA87-4C6A-8783-2843EB37D9BA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F712BA83-FA87-4C6A-8783-2843EB37D9BA}.Debug|Win32.Build.0 = Debug|Win32
+		{F712BA83-FA87-4C6A-8783-2843EB37D9BA}.Debug-tests|Win32.ActiveCfg = Debug|Win32
+		{F712BA83-FA87-4C6A-8783-2843EB37D9BA}.Debug-tests|Win32.Build.0 = Debug|Win32
+		{F712BA83-FA87-4C6A-8783-2843EB37D9BA}.Release|Win32.ActiveCfg = Release|Win32
+		{F712BA83-FA87-4C6A-8783-2843EB37D9BA}.Release|Win32.Build.0 = Release|Win32
+		{9168F132-4B67-4480-9B72-F0D51EF9DE4F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9168F132-4B67-4480-9B72-F0D51EF9DE4F}.Debug|Win32.Build.0 = Debug|Win32
+		{9168F132-4B67-4480-9B72-F0D51EF9DE4F}.Debug-tests|Win32.ActiveCfg = Debug|Win32
+		{9168F132-4B67-4480-9B72-F0D51EF9DE4F}.Debug-tests|Win32.Build.0 = Debug|Win32
+		{9168F132-4B67-4480-9B72-F0D51EF9DE4F}.Release|Win32.ActiveCfg = Release|Win32
+		{9168F132-4B67-4480-9B72-F0D51EF9DE4F}.Release|Win32.Build.0 = Release|Win32
+		{19B097D0-1B85-4B4F-9D38-36EA5D31A474}.Debug|Win32.ActiveCfg = Debug|Win32
+		{19B097D0-1B85-4B4F-9D38-36EA5D31A474}.Debug|Win32.Build.0 = Debug|Win32
+		{19B097D0-1B85-4B4F-9D38-36EA5D31A474}.Debug-tests|Win32.ActiveCfg = Debug|Win32
+		{19B097D0-1B85-4B4F-9D38-36EA5D31A474}.Debug-tests|Win32.Build.0 = Debug|Win32
+		{19B097D0-1B85-4B4F-9D38-36EA5D31A474}.Release|Win32.ActiveCfg = Release|Win32
+		{19B097D0-1B85-4B4F-9D38-36EA5D31A474}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

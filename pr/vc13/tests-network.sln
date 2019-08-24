@@ -1,0 +1,46 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libnet", "libnet.vcproj", "{338CBB50-A7E2-42B7-B1DE-434ACA2342F8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libutil", "libutil.vcproj", "{9168F132-4B67-4480-9B72-F0D51EF9DE4F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-server", "test-server.vcproj", "{18BA9CB3-D4DB-4AB9-B9AB-A32D21C9274D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-client", "test-client.vcproj", "{2A3AAC85-84A4-4460-AAFA-F463015C7FBD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug-tests|Win32 = Debug-tests|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{338CBB50-A7E2-42B7-B1DE-434ACA2342F8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{338CBB50-A7E2-42B7-B1DE-434ACA2342F8}.Debug|Win32.Build.0 = Debug|Win32
+		{338CBB50-A7E2-42B7-B1DE-434ACA2342F8}.Debug-tests|Win32.ActiveCfg = Debug|Win32
+		{338CBB50-A7E2-42B7-B1DE-434ACA2342F8}.Debug-tests|Win32.Build.0 = Debug|Win32
+		{338CBB50-A7E2-42B7-B1DE-434ACA2342F8}.Release|Win32.ActiveCfg = Release|Win32
+		{338CBB50-A7E2-42B7-B1DE-434ACA2342F8}.Release|Win32.Build.0 = Release|Win32
+		{9168F132-4B67-4480-9B72-F0D51EF9DE4F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9168F132-4B67-4480-9B72-F0D51EF9DE4F}.Debug|Win32.Build.0 = Debug|Win32
+		{9168F132-4B67-4480-9B72-F0D51EF9DE4F}.Debug-tests|Win32.ActiveCfg = Debug|Win32
+		{9168F132-4B67-4480-9B72-F0D51EF9DE4F}.Debug-tests|Win32.Build.0 = Debug|Win32
+		{9168F132-4B67-4480-9B72-F0D51EF9DE4F}.Release|Win32.ActiveCfg = Release|Win32
+		{9168F132-4B67-4480-9B72-F0D51EF9DE4F}.Release|Win32.Build.0 = Release|Win32
+		{18BA9CB3-D4DB-4AB9-B9AB-A32D21C9274D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{18BA9CB3-D4DB-4AB9-B9AB-A32D21C9274D}.Debug|Win32.Build.0 = Debug|Win32
+		{18BA9CB3-D4DB-4AB9-B9AB-A32D21C9274D}.Debug-tests|Win32.ActiveCfg = Debug|Win32
+		{18BA9CB3-D4DB-4AB9-B9AB-A32D21C9274D}.Debug-tests|Win32.Build.0 = Debug|Win32
+		{18BA9CB3-D4DB-4AB9-B9AB-A32D21C9274D}.Release|Win32.ActiveCfg = Release|Win32
+		{18BA9CB3-D4DB-4AB9-B9AB-A32D21C9274D}.Release|Win32.Build.0 = Release|Win32
+		{2A3AAC85-84A4-4460-AAFA-F463015C7FBD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2A3AAC85-84A4-4460-AAFA-F463015C7FBD}.Debug|Win32.Build.0 = Debug|Win32
+		{2A3AAC85-84A4-4460-AAFA-F463015C7FBD}.Debug-tests|Win32.ActiveCfg = Debug|Win32
+		{2A3AAC85-84A4-4460-AAFA-F463015C7FBD}.Debug-tests|Win32.Build.0 = Debug|Win32
+		{2A3AAC85-84A4-4460-AAFA-F463015C7FBD}.Release|Win32.ActiveCfg = Release|Win32
+		{2A3AAC85-84A4-4460-AAFA-F463015C7FBD}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
